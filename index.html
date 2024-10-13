@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<source lang="es">
+
+<!-- npx tailwindcss -i ./input.css -o ./src/output.css --watch -->
+
+
+<head>
+
+    <!-- Fuentes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="input.css">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="icon" href="p.png" type="image/png">
+</head>
+
+
+
+<body class="bg-gray-900">
+
+    <nav class="bg-green-700 px-4 border-b-2 border-green-950">
+
+        <ul class="w-full flex flex-row justify-end items-center">
+
+            <li class="botonNav"><a href="https://valengu1t0.github.io/" target="_blank">Mi Web</a></li>
+            <li class="botonNav"><a href="https://linkedin.com/in/valentino-privitera-52a646214" target="_blank">LinkedIn</a></li>
+            <li class="botonNav"><a href="https://github.com/ValenGu1t0" target="_blank">GitHub</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main class="flex flex-col items-center gap-8 py-8">
+
+        <img src="fcc_primary.svg" alt="freeCodeCamp" class="max-w-xs">
+
+        <h1 class="text-white text-4xl">¿Palíndromo o qué?</h1>
+
+        <div class="caja_palindromo flex flex-col gap-4 bg-green-600 p-6 rounded-3xl">
+            <label class="text-white" for="text-input">Ingresa tu texto para ver si es Palíndromo</label>
+            <div class="flex flex-row justify-between">
+                <input class="text-black border-2 focus:border-green-900 focus:outline-none pl-2" type="text" id="text-input" placeholder=" Neuquén"> 
+                <button class="text-white hover:bg-green-800 p-2" id="check-btn">Verificar</button>
+            </div>
+
+            <!-- Aca se crea el span -->
+        </div>
+
+        <section class="bg-green-500 p-6 rounded-3xl max-w-sm">
+            <p>Un <strong>palíndromo</strong> es una palabra o frase que se pronuncia y escribe de la misma forma hacia adelante y hacia atrás, ignorando puntuaciones y espacios obvio. Por ejemplo, una de las provincias de mi país, Neuquén.</p>
+        </section>
+    </main>
+
+    
+
+    <script src="input.js"></script>
+</body>
+
+    
+</html>

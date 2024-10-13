@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.botonNav { @apply
+
+    font-bold text-white
+    h-full
+    p-4
+
+
+    hover:bg-green-800
+;}
+
+
